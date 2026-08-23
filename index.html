@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinark Legacy Arts & Concepts | Handcrafted Realism & Fine Art</title>
+    <meta name="description" content="Vinark Legacy Arts & Concepts - Handcrafted hyper-realistic portraits in graphite, charcoal, and pen art by young African visual artist Alvin Mark Piwang.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlack: '#050507',
+                        brandCharcoal: '#0D0D11',
+                        brandCard: '#14141A',
+                        brandCardBorder: '#22222C',
+                        brandGold: '#D4AF37',
+                        brandGoldLight: '#F3E5AB',
+                        brandGoldDark: '#997A15',
+                        brandLight: '#FAF9F6',
+                        brandMuted: '#9E9EA8',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Cormorant Garamond', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gold-gradient': 'linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%)',
+                        'dark-radial': 'radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, rgba(5, 5, 7, 0) 70%)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Custom scrollbar and ambient effects */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050507;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #22222C;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+        
+        .gold-glow {
+            box-shadow: 0 0 25px -5px rgba(212, 175, 55, 0.25);
+        }
+        
+        .gold-text-shimmer {
+            background: linear-gradient(135deg, #D4AF37 0%, #FFF5C0 50%, #AA771C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .canvas-grain {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-brandBlack text-brandLight font-sans antialiased selection:bg-brandGold selection:text-brandBlack canvas-grain relative">
+
+    <!-- Ambient Top Glow -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-dark-radial pointer-events-none z-0"></div>
+
+    <!-- Navigation Bar -->
+    <header id="navbar" class="fixed top-0 left-0 w-full bg-brandBlack/85 backdrop-blur-md z-50 border-b border-brandCardBorder/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            
+            <!-- Brand Logo -->
+            <a href="#" class="group flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full border border-brandGold/40 flex items-center justify-center bg-brandCharcoal group-hover:border-brandGold transition-colors">
+                    <span class="font-serif font-bold text-brandGold text-xl">V</span>
+                </div>
+                <div>
+                    <span class="font-serif font-bold tracking-wider text-lg md:text-xl block leading-tight text-white group-hover:text-brandGold transition-colors">
+                        VINARK <span class="gold-text-shimmer">LEGACY</span>
+                    </span>
+                    <span class="text-[9px] uppercase tracking-[0.25em] text-brandMuted block">Arts & Concepts</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold uppercase tracking-[0.2em] text-gray-300">
+                <a href="#about" class="hover:text-brandGold transition-colors">About</a>
+                <a href="#portfolio" class="hover:text-brandGold transition-colors">Portfolio</a>
+                <a href="#services" class="hover:text-brandGold transition-colors">Commissions</a>
+                <a href="#process" class="hover:text-brandGold transition-colors">Process</a>
+                <a href="#contact" class="hover:text-brandGold transition-colors">Contact</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div class="hidden sm:flex items-center space-x-4">
+                <a href="#commission-form" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden rounded-full font-medium group">
+                    <span class="w-full h-full bg-gradient-to-br from-brandGold to-amber-700 group-hover:from-amber-400 group-hover:to-brandGold absolute"></span>
+                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-brandBlack rounded-full group-hover:bg-opacity-0 text-xs font-semibold uppercase tracking-widest text-brandGold group-hover:text-brandBlack">
+                        Order Portrait
+                    </span>
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-brandGold text-2xl focus:outline-none" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brandCharcoal border-b border-brandCardBorder px-6 py-6 space-y-4">
+            <a href="#about" class="block text-sm uppercase tracking-widest text-gray-300 hover:text-brandGold py-2">About</a>
+            <a href="#portfolio" class="block text-sm uppercase tracking-widest text-gray-300 hover:text-brandGold py-2">Portfolio</a>
+            <a href="#services" class="block text-sm uppercase tracking-widest text-gray-300 hover:text-brandGold py-2">Commissions & Rates</a>
+            <a href="#process" class="block text-sm uppercase tracking-widest text-gray-300 hover:text-brandGold py-2">Process</a>
+            <a href="#contact" class="block text-sm uppercase tracking-widest text-gray-300 hover:text-brandGold py-2">Contact</a>
+            <a href="#commission-form" class="block w-full text-center bg-brandGold text-brandBlack font-bold py-3 rounded-lg uppercase tracking-wider text-xs">
+                Order a Portrait
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-screen pt-32 pb-20 flex items-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center w-full z-10">
+            
+            <!-- Left Hero Content -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full border border-brandGold/30 bg-brandGold/5 text-brandGold text-xs font-semibold tracking-widest uppercase">
+                    <span class="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span>
+                    <span>Handcrafted African Portraiture</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-extrabold leading-[1.1] tracking-tight text-white">
+                    Vinark Legacy <br>
+                    <span class="gold-text-shimmer italic font-normal">Arts & Concepts</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl font-serif italic text-brandGoldLight font-light">
+                    "Turning moments into timeless art."
+                </p>
+
+                <p class="text-brandMuted text-base md:text-lg max-w-2xl leading-relaxed mx-auto lg:mx-0">
+                    Welcome to Vinark Legacy Arts & Concepts, where every portrait is carefully handcrafted to capture emotion, identity, and story through realistic art.
+                </p>
+
+                <!-- Hero Action Buttons -->
+                <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#portfolio" class="bg-brandGold hover:bg-amber-400 text-brandBlack font-bold px-8 py-4 rounded-xl text-xs uppercase tracking-[0.2em] transition-all transform hover:-translate-y-0.5 gold-glow text-center">
+                        View Portfolio
+                    </a>
+                    <a href="#services" class="border border-brandGold/40 hover:border-brandGold text-brandGold hover:bg-brandGold/10 font-semibold px-8 py-4 rounded-xl text-xs uppercase tracking-[0.2em] transition-all text-center">
+                        Order a Portrait
+                    </a>
+                    <a href="#contact" class="bg-brandCard hover:bg-brandCardBorder text-gray-300 hover:text-white font-semibold px-6 py-4 rounded-xl text-xs uppercase tracking-[0.2em] transition-all border border-brandCardBorder text-center">
+                        Contact Me
+                    </a>
+                </div>
+
+                <!-- Stats / Quick Proof Badges -->
+                <div class="pt-8 border-t border-brandCardBorder/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
+                    <div>
+                        <span class="block text-2xl md:text-3xl font-serif font-bold text-white">100%</span>
+                        <span class="text-[10px] md:text-xs text-brandMuted uppercase tracking-wider">Handcrafted</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl md:text-3xl font-serif font-bold text-brandGold">3+</span>
+                        <span class="text-[10px] md:text-xs text-brandMuted uppercase tracking-wider">Classic Mediums</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl md:text-3xl font-serif font-bold text-white">UGX</span>
+                        <span class="text-[10px] md:text-xs text-brandMuted uppercase tracking-wider">Fair Custom Rates</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Featured Artwork Display -->
+            <div class="lg:col-span-5 relative">
+                <div class="relative mx-auto max-w-md lg:max-w-none group">
+                    
+                    <!-- Decorative Gold Outer Frame Accent -->
+                    <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-brandGold/40 via-amber-700/20 to-brandGold/40 blur-sm opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+
+                    <!-- Main Frame Container -->
+                    <div class="relative bg-brandCard border border-brandGold/30 p-4 rounded-2xl overflow-hidden shadow-2xl">
+                        
+                        <!-- Artwork Aspect Canvas -->
+                        <div class="relative aspect-[4/5] rounded-xl overflow-hidden bg-brandCharcoal">
+                            <img id="hero-img" src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=1000&auto=format&fit=crop" 
+                                 alt="Featured Realism Portrait by Vinark Legacy" 
+                                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                            
+                            <!-- Overlay Gradient -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-brandBlack via-transparent to-transparent opacity-80"></div>
+
+                            <!-- Floating Artwork Label -->
+                            <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-brandBlack/80 backdrop-blur-md border border-brandGold/30 flex justify-between items-end">
+                                <div>
+                                    <span class="text-[10px] uppercase tracking-widest text-brandGold font-bold block">Featured Piece</span>
+                                    <h3 class="text-base font-serif font-bold text-white">The Royal Resilience</h3>
+                                    <p class="text-xs text-brandMuted">Hyper-Realistic Graphite & Charcoal</p>
+                                </div>
+                                <button onclick="openLightbox('https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=1200&auto=format&fit=crop', 'The Royal Resilience', 'Graphite & Charcoal', 'Detailed hyper-realistic studio piece capturing texture, light, and depth.')" 
+                                        class="w-9 h-9 rounded-full bg-brandGold text-brandBlack flex items-center justify-center hover:bg-white transition-colors" title="Zoom Piece">
+                                    <i class="fa-solid fa-expand text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 bg-brandCharcoal border-t border-brandCardBorder relative">
+        <div class="max-w-6xl mx-auto px-6 space-y-16">
+            
+            <div class="text-center space-y-4">
+                <span class="text-brandGold uppercase text-xs tracking-[0.3em] font-bold">Artist's Story & Discipline</span>
+                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-white">Building a Creative Legacy</h2>
+                <div class="w-16 h-0.5 bg-brandGold mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Story Narrative -->
+                <div class="lg:col-span-7 space-y-6 text-brandMuted text-base leading-relaxed">
+                    <p class="text-white text-lg font-serif italic">
+                        "Realism is not merely copying a photograph; it is feeling the pulse of the subject and breathing permanence into graphite, charcoal, and ink."
+                    </p>
+                    <p>
+                        <strong>Vinark Legacy Arts & Concepts</strong> is the vision of a dedicated young African visual artist and creative entrepreneur, Alvin Mark Piwang. Founded on the values of discipline, continuous improvement, and uncompromising craftsmanship, the studio was born from a deep-seated passion for high-detail portraiture.
+                    </p>
+                    <p>
+                        Every commission is approached as a historical monument—a piece created to transcend time, honoring personal identity, heritage, and significant life milestones. Whether through the smooth tonal gradients of graphite, the rich dramatic darks of charcoal, or the surgical precision of ballpoint pen, the mission remains constant: turning moments into timeless art.
+                    </p>
+                </div>
+
+                <!-- Artistic Medium Pillars -->
+                <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    
+                    <div class="p-5 bg-brandCard rounded-xl border border-brandCardBorder hover:border-brandGold/40 transition-all">
+                        <i class="fa-solid fa-pencil text-brandGold text-2xl mb-3"></i>
+                        <h3 class="text-white text-sm uppercase tracking-wider font-bold mb-1">Graphite Art</h3>
+                        <p class="text-xs text-brandMuted">Smooth skin tones and delicate realism using premium grades (2B-9B).</p>
+                    </div>
+
+                    <div class="p-5 bg-brandCard rounded-xl border border-brandCardBorder hover:border-brandGold/40 transition-all">
+                        <i class="fa-solid fa-fire text-brandGold text-2xl mb-3"></i>
+                        <h3 class="text-white text-sm uppercase tracking-wider font-bold mb-1">Charcoal Art</h3>
+                        <p class="text-xs text-brandMuted">Deep matte blacks, contrast, and raw emotional intensity.</p>
+                    </div>
+
+                    <div class="p-5 bg-brandCard rounded-xl border border-brandCardBorder hover:border-brandGold/40 transition-all">
+                        <i class="fa-solid fa-pen-nib text-brandGold text-2xl mb-3"></i>
+                        <h3 class="text-white text-sm uppercase tracking-wider font-bold mb-1">Pen Artwork</h3>
+                        <p class="text-xs text-brandMuted">Intricate ballpoint crosshatching created with unyielding precision.</p>
+                    </div>
+
+                    <div class="p-5 bg-brandCard rounded-xl border border-brandCardBorder hover:border-brandGold/40 transition-all">
+                        <i class="fa-solid fa-gem text-brandGold text-2xl mb-3"></i>
+                        <h3 class="text-white text-sm uppercase tracking-wider font-bold mb-1">Custom Commissions</h3>
+                        <p class="text-xs text-brandMuted">Bespoke studio concepts crafted specifically to client story requirements.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PORTFOLIO / GALLERY SECTION -->
+    <section id="portfolio" class="py-24 bg-brandBlack border-t border-brandCardBorder">
+        <div class="max-w-7xl mx-auto px-6 space-y-12">
+            
+            <div class="text-center space-y-4">
+                <span class="text-brandGold uppercase text-xs tracking-[0.3em] font-bold">Curated Gallery</span>
+                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-white">The Fine Art Collection</h2>
+                <div class="w-16 h-0.5 bg-brandGold mx-auto"></div>
+                <p class="text-brandMuted text-sm max-w-xl mx-auto">Explore hyper-realistic portraits and creative concepts. Click any piece for full detail preview.</p>
+            </div>
+
+            <!-- Category Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-4 text-xs uppercase tracking-widest font-semibold">
+                <button onclick="filterGallery('all')" class="filter-btn active px-5 py-2.5 rounded-full border border-brandGold bg-brandGold text-brandBlack transition-all">All Works</button>
+                <button onclick="filterGallery('realism')" class="filter-btn px-5 py-2.5 rounded-full border border-brandCardBorder bg-brandCard text-brandMuted hover:border-brandGold hover:text-white transition-all">Hyper-Realism</button>
+                <button onclick="filterGallery('graphite')" class="filter-btn px-5 py-2.5 rounded-full border border-brandCardBorder bg-brandCard text-brandMuted hover:border-brandGold hover:text-white transition-all">Graphite</button>
+                <button onclick="filterGallery('charcoal')" class="filter-btn px-5 py-2.5 rounded-full border border-brandCardBorder bg-brandCard text-brandMuted hover:border-brandGold hover:text-white transition-all">Charcoal</button>
+                <button onclick="filterGallery('pen')" class="filter-btn px-5 py-2.5 rounded-full border border-brandCardBorder bg-brandCard text-brandMuted hover:border-brandGold hover:text-white transition-all">Pen Artwork</button>
+                <button onclick="filterGallery('concepts')" class="filter-btn px-5 py-2.5 rounded-full border border-brandCardBorder bg-brandCard text-brandMuted hover:border-brandGold hover:text-white transition-all">Concepts</button>
+            </div>
+
+            <!-- Gallery Grid Container -->
+            <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-4">
+                
+                <!-- Artwork 1 -->
+                <div class="gallery-item realism graphite bg-brandCard rounded-2xl overflow-hidden border border-brandCardBorder hover:border-brandGold/50 transition-all duration-300 group">
+                    <div class="relative aspect-[4/5] bg-neutral-900 overflow-hidden cursor-pointer" 
+                         onclick="openLightbox('https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000&auto=format&fit=crop', 'The Silent Matriarch', 'Graphite & Pencil', 'A delicate realistic portrait highlighting smooth skin textures, life-like eyes, and quiet dignity.')">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop" alt="The Silent Matriarch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brandBlack/90 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 bg-brandBlack/80 border border-brandGold/40 rounded-full text-[10px] text-brandGold uppercase font-semibold">Graphite</span>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="text-xl font-serif font-bold text-white group-hover:text-brandGold transition-colors">The Silent Matriarch</h3>
+                        <p class="text-xs text-brandGold font-medium uppercase tracking-wider">Medium: Graphite Pencil on Paper</p>
+                        <p class="text-brandMuted text-xs leading-relaxed">A delicate realistic portrait highlighting smooth skin textures, life-like eyes, and quiet dignity.</p>
+                    </div>
+                </div>
+
+                <!-- Artwork 2 -->
+                <div class="gallery-item charcoal realism bg-brandCard rounded-2xl overflow-hidden border border-brandCardBorder hover:border-brandGold/50 transition-all duration-300 group">
+                    <div class="relative aspect-[4/5] bg-neutral-900 overflow-hidden cursor-pointer"
+                         onclick="openLightbox('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1000&auto=format&fit=crop', 'Visionary in Charcoal', 'Powdered Charcoal', 'High contrast charcoal piece capturing dramatic lighting and commanding presence.')">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop" alt="Visionary in Charcoal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brandBlack/90 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 bg-brandBlack/80 border border-brandGold/40 rounded-full text-[10px] text-brandGold uppercase font-semibold">Charcoal</span>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="text-xl font-serif font-bold text-white group-hover:text-brandGold transition-colors">Visionary in Charcoal</h3>
+                        <p class="text-xs text-brandGold font-medium uppercase tracking-wider">Medium: Willow & Powdered Charcoal</p>
+                        <p class="text-brandMuted text-xs leading-relaxed">High contrast charcoal piece capturing dramatic lighting and commanding presence.</p>
+                    </div>
+                </div>
+
+                <!-- Artwork 3 -->
+                <div class="gallery-item pen bg-brandCard rounded-2xl overflow-hidden border border-brandCardBorder hover:border-brandGold/50 transition-all duration-300 group">
+                    <div class="relative aspect-[4/5] bg-neutral-900 overflow-hidden cursor-pointer"
+                         onclick="openLightbox('https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop', 'Soul in Ink', 'Ballpoint Pen', 'Intricate crosshatched ballpoint pen study rendered with extreme precision and depth.')">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop" alt="Soul in Ink" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brandBlack/90 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 bg-brandBlack/80 border border-brandGold/40 rounded-full text-[10px] text-brandGold uppercase font-semibold">Pen Art</span>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="text-xl font-serif font-bold text-white group-hover:text-brandGold transition-colors">Soul in Ink</h3>
+                        <p class="text-xs text-brandGold font-medium uppercase tracking-wider">Medium: Ballpoint Pen Illustration</p>
+                        <p class="text-brandMuted text-xs leading-relaxed">Intricate crosshatched ballpoint pen study rendered with extreme precision and depth.</p>
+                    </div>
+                </div>
+
+                <!-- Artwork 4 -->
+                <div class="gallery-item concepts realism bg-brandCard rounded-2xl overflow-hidden border border-brandCardBorder hover:border-brandGold/50 transition-all duration-300 group">
+                    <div class="relative aspect-[4/5] bg-neutral-900 overflow-hidden cursor-pointer"
+                         onclick="openLightbox('https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?q=80&w=1000&auto=format&fit=crop', 'Ancestral Majesty', 'Mixed Studio Concept', 'Creative portrait concept combining realistic human study with traditional symbolism.')">
+                        <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?q=80&w=800&auto=format&fit=crop" alt="Ancestral Majesty" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brandBlack/90 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 bg-brandBlack/80 border border-brandGold/40 rounded-full text-[10px] text-brandGold uppercase font-semibold">Concept</span>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="text-xl font-serif font-bold text-white group-hover:text-brandGold transition-colors">Ancestral Majesty</h3>
+                        <p class="text-xs text-brandGold font-medium uppercase tracking-wider">Medium: Charcoal & Gold Foil Concept</p>
+                        <p class="text-brandMuted text-xs leading-relaxed">Creative portrait concept combining realistic human study with traditional symbolism.</p>
+                    </div>
+                </div>
+
+                <!-- Artwork 5 -->
+                <div class="gallery-item graphite realism bg-brandCard rounded-2xl overflow-hidden border border-brandCardBorder hover:border-brandGold/50 transition-all duration-300 group">
+                    <div class="relative aspect-[4/5] bg-neutral-900 overflow-hidden cursor-pointer"
+                         onclick="openLightbox('https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1000&auto=format&fit=crop', 'Gaze of Destiny', 'Graphite Art', 'Close-up focal study focusing on emotional expression and optical reflection.')">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=800&auto=format&fit=crop" alt="Gaze of Destiny" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brandBlack/90 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 bg-brandBlack/80 border border-brandGold/40 rounded-full text-[10px] text-brandGold uppercase font-semibold">Graphite</span>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="text-xl font-serif font-bold text-white group-hover:text-brandGold transition-colors">Gaze of Destiny</h3>
+                        <p class="text-xs text-brandGold font-medium uppercase tracking-wider">Medium: Graphite on Fine Grain Paper</p>
+                        <p class="text-brandMuted text-xs leading-relaxed">Close-up focal study focusing on emotional expression and optical reflection.</p>
+                    </div>
+                </div>
+
+                <!-- Artwork 6 -->
+                <div class="gallery-item pen charcoal bg-brandCard rounded-2xl overflow-hidden border border-brandCardBorder hover:border-brandGold/50 transition-all duration-300 group">
+                    <div class="relative aspect-[4/5] bg-neutral-900 overflow-hidden cursor-pointer"
+                         onclick="openLightbox('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1000&auto=format&fit=crop', 'The Legacy Elder', 'Pen & Charcoal', 'Handcrafted commission capturing timeless character marks and grandfatherly warmth.')">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop" alt="The Legacy Elder" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brandBlack/90 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 bg-brandBlack/80 border border-brandGold/40 rounded-full text-[10px] text-brandGold uppercase font-semibold">Pen & Charcoal</span>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="text-xl font-serif font-bold text-white group-hover:text-brandGold transition-colors">The Legacy Elder</h3>
+                        <p class="text-xs text-brandGold font-medium uppercase tracking-wider">Medium: Pen & Charcoal Combination</p>
+                        <p class="text-brandMuted text-xs leading-relaxed">Handcrafted commission capturing timeless character marks and grandfatherly warmth.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SERVICES & COMMISSION RATES SECTION -->
+    <section id="services" class="py-24 bg-brandCharcoal border-t border-brandCardBorder relative">
+        <div class="max-w-7xl mx-auto px-6 space-y-16">
+            
+            <div class="text-center space-y-4">
+                <span class="text-brandGold uppercase text-xs tracking-[0.3em] font-bold">Invest in Art</span>
+                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-white">Commission Options & Rates</h2>
+                <div class="w-16 h-0.5 bg-brandGold mx-auto"></div>
+                <p class="text-brandMuted text-sm max-w-xl mx-auto">Select your desired medium and standard dimension. Every piece is created with professional grade archival materials.</p>
+            </div>
+
+            <!-- Pricing Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Graphite Tier -->
+                <div class="bg-brandCard rounded-2xl p-8 border border-brandCardBorder hover:border-brandGold/40 transition-all flex flex-col justify-between relative group">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="text-[10px] text-brandGold uppercase tracking-widest font-bold block">Option 01</span>
+                                <h3 class="text-2xl font-serif font-bold text-white">Graphite Portraits</h3>
+                            </div>
+                            <i class="fa-solid fa-pencil text-brandGold/50 text-2xl group-hover:text-brandGold transition-colors"></i>
+                        </div>
+                        <p class="text-xs text-brandMuted mb-6">Smooth monochrome realism using graphite pencils. Ideal for personal portraits and classic gifts.</p>
+                        
+                        <!-- Pricing Sizes -->
+                        <div class="space-y-3 border-t border-brandCardBorder pt-6">
+                            <div class="flex justify-between items-center p-3 rounded-lg bg-brandBlack/50 hover:bg-brandBlack border border-transparent hover:border-brandGold/30 transition-all cursor-pointer" onclick="selectPricing('Graphite Portrait', 'A4', 70000)">
+                                <div>
+                                    <span class="font-bold text-sm text-white block">A4 Size</span>
+                                    <span class="text-[10px] text-brandMuted">21.0 x 29.7 cm</span>
+                                </div>
+                                <span class="font-bold text-brandGold text-base">70,000 UGX</span>
+                            </div>
+
+                            <div class="flex justify-between items-center p-3 rounded-lg bg-brandBlack/50 hover:bg-brandBlack border border-transparent hover:border-brandGold/30 transition-all cursor-pointer" onclick="selectPricing('Graphite Portrait', 'A3', 120000)">
+                                <div>
+                                    <span class="font-bold text-sm text-white block">A3 Size</span>
+                                    <span class="text-[10px] text-brandMuted">29.7 x 42.0 cm</span>
+                                </div>
+                                <span class="font-bold text-brandGold text-base">120,000 UGX</span>
+                            </div>
+
+                            <div class="flex justify-between items-center p-3 rounded-lg bg-brandBlack/50 hover:bg-brandBlack border border-transparent hover:border-brandGold/30 transition-all cursor-pointer" onclick="selectPricing('Graphite Portrait', 'A2', 170000)">
+                                <div>
+                                    <span class="font-bold text-sm text-white block">A2 Size</span>
+                                    <span class="text-[10px] text-brandMuted">42.0 x 59.4 cm</span>
+                                </div>
+                                <span class="font-bold text-brandGold text-base">170,000 UGX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#commission-form" onclick="selectPricing('Graphite Portrait', 'A3', 120000)" class="mt-8 w-full block text-center bg-brandBlack hover:bg-brandGold hover:text-brandBlack text-brandGold border border-brandGold/30 py-3 rounded-xl uppercase text-xs font-bold tracking-widest transition-all">
+                        Select Graphite
+                    </a>
+                </div>
+
+                <!-- Pen Tier (Featured) -->
+                <div class="bg-brandCard rounded-2xl p-8 border-2 border-brandGold relative flex flex-col justify-between shadow-2xl gold-glow transform md:-translate-y-2">
+                    <span class="absolute -top-3.5 right-6 bg-brandGold text-brandBlack text-[10px] uppercase font-bold px-3 py-1 rounded-full tracking-widest shadow-md">
+                        Most Distinctive
+                    </span>
+                    
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="text-[10px] text-brandGold uppercase tracking-widest font-bold block">Option 02</span>
+                                <h3 class="text-2xl font-serif font-bold text-white">Pen Portraits</h3>
+                            </div>
+                            <i class="fa-solid fa-pen-nib text-brandGold text-2xl"></i>
+                        </div>
+                        <p class="text-xs text-brandMuted mb-6">Unforgiving ballpoint crosshatching. Creates sharp contrast and a modern artwork aesthetic.</p>
+                        
+                        <!-- Pricing Sizes -->
+                        <div class="space-y-3 border-t border-brandCardBorder pt-6">
+                            <div class="flex justify-between items-center p-3 rounded-lg bg-brandBlack/60 hover:bg-brandBlack border border-transparent hover:border-brandGold transition-all cursor-pointer" onclick="selectPricing('Pen Portrait', 'A4', 120000)">
+                                <div>
+                                    <span class="font-bold text-sm text-white block">A4 Size</span>
+                                    <span class="text-[10px] text-brandMuted">21.0 x 29.7 cm</span>
+                                </div>
+                                <span class="font-bold text-brandGold text-base">120,000 UGX</span>
+                            </div>
+
+                            <div class="flex justify-between items-center p-3 rounded-lg bg-brandBlack/60 hover:bg-brandBlack border border-transparent hover:border-brandGold transition-all cursor-pointer" onclick="selectPricing('Pen Portrait', 'A3', 170000)">
+                                <div>
+                                    <span class="font-bold text-sm text-white block">A3 Size</span>
+                                    <span class="text-[10px] text-brandMuted">29.7 x 42.0 cm</span>
+                                </div>
+                                <span class="font-bold text-brandGold text-base">170,000 UGX</span>
+                            </div>
+
+                            <div class="flex justify-between items-center p-3 rounded-lg bg-brandBlack/60 hover:bg-brandBlack border border-transparent hover:border-brandGold transition-all cursor-pointer" onclick="selectPricing('Pen Portrait', 'A2', 220000)">
+                                <div>
+                                    <span class="font-bold text-sm text-white block">A2 Size</span>
+                                    <span class="text-[10px] text-brandMuted">42.0 x 59.4 cm</span>
+                                </div>
+                                <span class="font-bold text-brandGold text-base">220,000 UGX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#commission-form" onclick="selectPricing('Pen Portrait', 'A3', 170000)" class="mt-8 w-full block text-center bg-brandGold hover:bg-amber-400 text-brandBlack py-3.5 rounded-xl uppercase text-xs font-bold tracking-widest transition-all">
+                        Select Pen Artwork
+                    </a>
+                </div>
+
+                <!-- Premium Custom Tier -->
+                <div class="bg-brandCard rounded-2xl p-8 border border-brandCardBorder hover:border-brandGold/40 transition-all flex flex-col justify-between relative group">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="text-[10px] text-brandGold uppercase tracking-widest font-bold block">Option 03</span>
+                                <h3 class="text-2xl font-serif font-bold text-white">Premium Custom Portraits</h3>
+                            </div>
+                            <i class="fa-solid fa-crown text-brandGold/50 text-2xl group-hover:text-brandGold transition-colors"></i>
+                        </div>
+                        <p class="text-xs text-brandMuted mb-6">Mixed media concepts, multi-subject compositions, or special detailed backgrounds.</p>
+                        
+                        <!-- Pricing Sizes -->
+                        <div class="space-y-3 border-t border-brandCardBorder pt-6">
+                            <div class="flex justify-between items-center p-3 rounded-lg bg-brandBlack/50 hover:bg-brandBlack border border-transparent hover:border-brandGold/30 transition-all cursor-pointer" onclick="selectPricing('Premium Custom Portrait', 'A4', 100000)">
+                                <div>
+                                    <span class="font-bold text-sm text-white block">A4 Size</span>
+                                    <span class="text-[10px] text-brandMuted">21.0 x 29.7 cm</span>
+                                </div>
+                                <span class="font-bold text-brandGold text-base">100,000 UGX</span>
+                            </div>
+
+                            <div class="flex justify-between items-center p-3 rounded-lg bg-brandBlack/50 hover:bg-brandBlack border border-transparent hover:border-brandGold/30 transition-all cursor-pointer" onclick="selectPricing('Premium Custom Portrait', 'A3', 150000)">
+                                <div>
+                                    <span class="font-bold text-sm text-white block">A3 Size</span>
+                                    <span class="text-[10px] text-brandMuted">29.7 x 42.0 cm</span>
+                                </div>
+                                <span class="font-bold text-brandGold text-base">150,000 UGX</span>
+                            </div>
+
+                            <div class="flex justify-between items-center p-3 rounded-lg bg-brandBlack/50 hover:bg-brandBlack border border-transparent hover:border-brandGold/30 transition-all cursor-pointer" onclick="selectPricing('Premium Custom Portrait', 'A2', 200000)">
+                                <div>
+                                    <span class="font-bold text-sm text-white block">A2 Size</span>
+                                    <span class="text-[10px] text-brandMuted">42.0 x 59.4 cm</span>
+                                </div>
+                                <span class="font-bold text-brandGold text-base">200,000 UGX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#commission-form" onclick="selectPricing('Premium Custom Portrait', 'A3', 150000)" class="mt-8 w-full block text-center bg-brandBlack hover:bg-brandGold hover:text-brandBlack text-brandGold border border-brandGold/30 py-3 rounded-xl uppercase text-xs font-bold tracking-widest transition-all">
+                        Select Custom
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Framing Callout Badge -->
+            <div class="p-6 rounded-2xl bg-gradient-to-r from-brandCard via-brandCharcoal to-brandCard border border-brandGold/30 text-center flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center space-x-4 text-left">
+                    <div class="w-12 h-12 rounded-xl bg-brandGold/10 border border-brandGold/30 flex items-center justify-center text-brandGold text-xl">
+                        <i class="fa-solid fa-vector-square"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-base font-serif font-bold text-white">Custom Wooden & Modern Framing Available</h4>
+                        <p class="text-xs text-brandMuted">Protect your artwork with high-quality glass, custom mats, and sturdy wood frames upon request.</p>
+                    </div>
+                </div>
+                <a href="#contact" class="whitespace-nowrap px-6 py-2.5 rounded-xl border border-brandGold text-brandGold text-xs font-semibold uppercase tracking-wider hover:bg-brandGold hover:text-brandBlack transition-all">
+                    Inquire Framing
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section id="process" class="py-24 bg-brandBlack border-t border-brandCardBorder">
+        <div class="max-w-7xl mx-auto px-6 space-y-16">
+            
+            <div class="text-center space-y-4">
+                <span class="text-brandGold uppercase text-xs tracking-[0.3em] font-bold">Step by Step</span>
+                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-white">The Creation Journey</h2>
+                <div class="w-16 h-0.5 bg-brandGold mx-auto"></div>
+                <p class="text-brandMuted text-sm max-w-xl mx-auto">How we collaborate from initial reference photo to delivered masterpiece.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-6 relative">
+                
+                <!-- Step 1 -->
+                <div class="bg-brandCard p-6 rounded-2xl border border-brandCardBorder space-y-4 relative hover:border-brandGold/40 transition-all">
+                    <span class="text-3xl font-serif font-bold text-brandGold">01</span>
+                    <h3 class="text-base font-bold text-white uppercase tracking-wider">Client Inquiry</h3>
+                    <p class="text-xs text-brandMuted leading-relaxed">Fill out the commission form or message directly on WhatsApp with your request.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-brandCard p-6 rounded-2xl border border-brandCardBorder space-y-4 relative hover:border-brandGold/40 transition-all">
+                    <span class="text-3xl font-serif font-bold text-brandGold">02</span>
+                    <h3 class="text-base font-bold text-white uppercase tracking-wider">Photo Discussion</h3>
+                    <p class="text-xs text-brandMuted leading-relaxed">Review reference photos for lighting, resolution, medium, size, and framing preferences.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-brandCard p-6 rounded-2xl border border-brandCardBorder space-y-4 relative hover:border-brandGold/40 transition-all">
+                    <span class="text-3xl font-serif font-bold text-brandGold">03</span>
+                    <h3 class="text-base font-bold text-white uppercase tracking-wider">Sketch & Prep</h3>
+                    <p class="text-xs text-brandMuted leading-relaxed">Paper preparation, composition layout, and baseline proportional sketching.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-brandCard p-6 rounded-2xl border border-brandCardBorder space-y-4 relative hover:border-brandGold/40 transition-all">
+                    <span class="text-3xl font-serif font-bold text-brandGold">04</span>
+                    <h3 class="text-base font-bold text-white uppercase tracking-wider">Detailed Creation</h3>
+                    <p class="text-xs text-brandMuted leading-relaxed">Layering textures, shadows, and fine details using high-grade graphite, charcoal, or pen.</p>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="bg-brandCard p-6 rounded-2xl border border-brandCardBorder space-y-4 relative hover:border-brandGold/40 transition-all">
+                    <span class="text-3xl font-serif font-bold text-brandGold">05</span>
+                    <h3 class="text-base font-bold text-white uppercase tracking-wider">Final Delivery</h3>
+                    <p class="text-xs text-brandMuted leading-relaxed">Fixative spray seal, optional frame mounting, secure packaging, and handoff.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT & COMMISSION FORM SECTION -->
+    <section id="contact" class="py-24 bg-brandCharcoal border-t border-brandCardBorder relative">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <!-- Contact Info & Channels -->
+            <div class="lg:col-span-5 space-y-8">
+                <div>
+                    <span class="text-brandGold uppercase text-xs tracking-[0.3em] font-bold block mb-2">Connect Directly</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white">Get in Touch</h2>
+                    <p class="text-brandMuted text-sm mt-3 leading-relaxed">
+                        Ready to begin your portrait or have questions about a studio concept? Reach out directly via phone, WhatsApp, or TikTok.
+                    </p>
+                </div>
+
+                <!-- Contact Detail Badges -->
+                <div class="space-y-4 text-sm">
+                    
+                    <a href="https://wa.me/256749166015?text=Hello%20Vinark%20Legacy%20Arts!%20I%20would%20like%20to%20inquire%20about%20a%20custom%20portrait." 
+                       target="_blank" 
+                       class="flex items-center space-x-4 p-5 bg-brandCard rounded-2xl border border-brandCardBorder hover:border-emerald-500/50 transition-all group">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl group-hover:scale-110 transition-transform">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-brandMuted uppercase tracking-widest block">Phone & WhatsApp</span>
+                            <span class="font-bold text-white group-hover:text-emerald-400 transition-colors">+256 749 166015</span>
+                        </div>
+                    </a>
+
+                    <a href="mailto:vinarklegacy@gmail.com" 
+                       class="flex items-center space-x-4 p-5 bg-brandCard rounded-2xl border border-brandCardBorder hover:border-brandGold/50 transition-all group">
+                        <div class="w-12 h-12 rounded-xl bg-brandGold/10 border border-brandGold/30 flex items-center justify-center text-brandGold text-xl group-hover:scale-110 transition-transform">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-brandMuted uppercase tracking-widest block">Direct Email</span>
+                            <span class="font-bold text-white group-hover:text-brandGold transition-colors">vinarklegacy@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@alvinmarkpiwang" 
+                       target="_blank" 
+                       class="flex items-center space-x-4 p-5 bg-brandCard rounded-2xl border border-brandCardBorder hover:border-pink-500/50 transition-all group">
+                        <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-xl group-hover:scale-110 transition-transform">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-brandMuted uppercase tracking-widest block">TikTok Videos & Process</span>
+                            <span class="font-bold text-white group-hover:text-pink-400 transition-colors">@alvinmarkpiwang</span>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- Artist Quote Box -->
+                <div class="p-6 rounded-2xl bg-brandBlack border border-brandCardBorder space-y-2">
+                    <i class="fa-solid fa-quote-left text-brandGold/40 text-xl"></i>
+                    <p class="text-xs text-brandMuted italic leading-relaxed">
+                        "Every pencil stroke carries intention. Thank you for supporting authentic handcrafted art."
+                    </p>
+                    <span class="text-xs font-bold text-white block pt-2">— Alvin Mark Piwang, Artist</span>
+                </div>
+            </div>
+
+            <!-- Commission Form Container -->
+            <div id="commission-form" class="lg:col-span-7 bg-brandCard p-8 rounded-3xl border border-brandCardBorder shadow-2xl relative">
+                
+                <div class="flex justify-between items-center mb-6 border-b border-brandCardBorder pb-4">
+                    <div>
+                        <span class="text-[10px] text-brandGold uppercase tracking-widest font-bold">Direct Studio Order</span>
+                        <h3 class="text-2xl font-serif font-bold text-white">Order a Portrait</h3>
+                    </div>
+                    <div id="selected-rate-badge" class="hidden px-3 py-1 bg-brandGold/10 border border-brandGold/40 rounded-full text-xs text-brandGold font-bold">
+                        <!-- Auto updated by price selector -->
+                    </div>
+                </div>
+
+                <form id="portrait-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-brandMuted mb-2">Your Name *</label>
+                            <input type="text" id="form-name" required class="w-full bg-brandBlack border border-brandCardBorder rounded-xl p-3.5 text-sm focus:border-brandGold focus:outline-none text-white transition-colors" placeholder="e.g. Samuel Okello">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-brandMuted mb-2">Email Address *</label>
+                            <input type="email" id="form-email" required class="w-full bg-brandBlack border border-brandCardBorder rounded-xl p-3.5 text-sm focus:border-brandGold focus:outline-none text-white transition-colors" placeholder="name@domain.com">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-brandMuted mb-2">Phone / WhatsApp Number *</label>
+                            <input type="tel" id="form-phone" required class="w-full bg-brandBlack border border-brandCardBorder rounded-xl p-3.5 text-sm focus:border-brandGold focus:outline-none text-white transition-colors" placeholder="+256 700 000000">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-brandMuted mb-2">Artwork Type *</label>
+                            <select id="form-type" onchange="updateEstimatedPrice()" class="w-full bg-brandBlack border border-brandCardBorder rounded-xl p-3.5 text-sm focus:border-brandGold focus:outline-none text-white transition-colors">
+                                <option value="Graphite Portrait">Graphite Portrait</option>
+                                <option value="Pen Portrait">Pen Portrait</option>
+                                <option value="Premium Custom Portrait">Premium Custom Portrait</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-brandMuted mb-2">Preferred Size *</label>
+                            <select id="form-size" onchange="updateEstimatedPrice()" class="w-full bg-brandBlack border border-brandCardBorder rounded-xl p-3.5 text-sm focus:border-brandGold focus:outline-none text-white transition-colors">
+                                <option value="A4">A4 (21 x 29.7 cm)</option>
+                                <option value="A3" selected>A3 (29.7 x 42 cm)</option>
+                                <option value="A2">A2 (42 x 59.4 cm)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-brandMuted mb-2">Framing Needed?</label>
+                            <select id="form-frame" class="w-full bg-brandBlack border border-brandCardBorder rounded-xl p-3.5 text-sm focus:border-brandGold focus:outline-none text-white transition-colors">
+                                <option value="No Frame (Paper Artwork Only)">No Frame (Paper Artwork Only)</option>
+                                <option value="Yes, Custom Wooden Frame">Yes, Custom Wooden Frame</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Reference Image Upload -->
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-brandMuted mb-2">Upload Reference Image (Optional Preview)</label>
+                        <div class="border-2 border-dashed border-brandCardBorder rounded-2xl p-4 text-center hover:border-brandGold/50 transition-colors bg-brandBlack/40">
+                            <input type="file" id="form-file" accept="image/*" onchange="handleFilePreview(event)" class="hidden">
+                            <label for="form-file" class="cursor-pointer space-y-2 block">
+                                <i class="fa-solid fa-cloud-arrow-up text-brandGold text-2xl"></i>
+                                <span id="file-label-text" class="block text-xs text-brandMuted">Click or drag & drop high-resolution photo here</span>
+                            </label>
+                            <div id="file-preview-container" class="hidden mt-3 flex items-center justify-center space-x-3">
+                                <img id="file-preview-img" class="w-12 h-12 object-cover rounded-lg border border-brandGold" alt="Preview">
+                                <span id="file-name-display" class="text-xs text-brandGold truncate max-w-xs"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-brandMuted mb-2">Message or Custom Requirements</label>
+                        <textarea id="form-message" rows="3" class="w-full bg-brandBlack border border-brandCardBorder rounded-xl p-3.5 text-sm focus:border-brandGold focus:outline-none text-white transition-colors" placeholder="Mention preferred completion date, background requests, or specific details..."></textarea>
+                    </div>
+
+                    <!-- Submission buttons -->
+                    <div class="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <button type="submit" name="action" value="whatsapp" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-xl uppercase tracking-wider text-xs flex items-center justify-center space-x-2 transition-all shadow-lg">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Send via WhatsApp</span>
+                        </button>
+
+                        <button type="submit" name="action" value="email" class="bg-brandGold hover:bg-amber-400 text-brandBlack font-bold py-4 rounded-xl uppercase tracking-wider text-xs flex items-center justify-center space-x-2 transition-all shadow-lg gold-glow">
+                            <i class="fa-regular fa-paper-plane text-lg"></i>
+                            <span>Submit Request</span>
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-16 bg-black border-t border-brandCardBorder text-center space-y-6">
+        <div class="max-w-7xl mx-auto px-6 space-y-4">
+            
+            <a href="#" class="inline-block font-serif font-bold text-2xl tracking-wider text-white">
+                VINARK <span class="gold-text-shimmer">LEGACY</span> ARTS & CONCEPTS
+            </a>
+
+            <p class="text-brandGold font-serif italic text-base">"Creating art. Building legacy."</p>
+
+            <div class="flex justify-center space-x-6 text-gray-400 pt-2">
+                <a href="https://wa.me/256749166015" target="_blank" class="w-10 h-10 rounded-full border border-brandCardBorder flex items-center justify-center hover:border-brandGold hover:text-brandGold transition-all">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="mailto:vinarklegacy@gmail.com" class="w-10 h-10 rounded-full border border-brandCardBorder flex items-center justify-center hover:border-brandGold hover:text-brandGold transition-all">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+                <a href="https://www.tiktok.com/@alvinmarkpiwang" target="_blank" class="w-10 h-10 rounded-full border border-brandCardBorder flex items-center justify-center hover:border-brandGold hover:text-brandGold transition-all">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+
+            <div class="pt-8 border-t border-white/5 text-xs text-brandMuted">
+                &copy; 2026 Vinark Legacy Arts & Concepts. All Rights Reserved.
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox" class="fixed inset-0 bg-black/95 z-50 hidden flex items-center justify-center p-4 backdrop-blur-lg">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl hover:text-brandGold transition-colors z-50">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-4xl w-full bg-brandCard rounded-3xl overflow-hidden border border-brandGold/30 grid grid-cols-1 md:grid-cols-12 shadow-2xl">
+            <div class="md:col-span-7 bg-brandBlack flex items-center justify-center p-4">
+                <img id="lightbox-img" src="" alt="Zoomed artwork" class="max-h-[70vh] w-auto object-contain rounded-xl">
+            </div>
+            <div class="md:col-span-5 p-8 flex flex-col justify-between space-y-6">
+                <div class="space-y-3">
+                    <span id="lightbox-medium" class="text-xs text-brandGold uppercase tracking-widest font-bold"></span>
+                    <h3 id="lightbox-title" class="text-2xl font-serif font-bold text-white"></h3>
+                    <p id="lightbox-desc" class="text-xs text-brandMuted leading-relaxed"></p>
+                </div>
+                <div class="space-y-3 pt-4 border-t border-brandCardBorder">
+                    <a id="lightbox-cta" href="#commission-form" onclick="closeLightbox()" class="w-full block text-center bg-brandGold text-brandBlack font-bold py-3 rounded-xl uppercase tracking-wider text-xs hover:bg-amber-400 transition-all">
+                        Inquire Similar Piece
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SUCCESS TOAST NOTIFICATION -->
+    <div id="toast" class="fixed bottom-6 right-6 bg-brandCard border border-brandGold text-white px-6 py-4 rounded-2xl shadow-2xl transform translate-y-32 transition-transform duration-500 z-50 flex items-center space-x-3">
+        <i class="fa-solid fa-circle-check text-brandGold text-xl"></i>
+        <div>
+            <h4 class="font-bold text-sm">Request Initiated!</h4>
+            <p class="text-xs text-brandMuted">Thank you for connecting with Vinark Legacy Arts.</p>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT INTERACTION LOGIC -->
+    <script>
+        // Pricing Table Data
+        const pricingMap = {
+            'Graphite Portrait': { 'A4': 70000, 'A3': 120000, 'A2': 170000 },
+            'Pen Portrait': { 'A4': 120000, 'A3': 170000, 'A2': 220000 },
+            'Premium Custom Portrait': { 'A4': 100000, 'A3': 150000, 'A2': 200000 }
+        };
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile drawer on navigation click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Gallery Filter Logic
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const filterBtns = document.querySelectorAll('.filter-btn');
+
+            filterBtns.forEach(btn => {
+                btn.classList.remove('bg-brandGold', 'text-brandBlack', 'border-brandGold');
+                btn.classList.add('bg-brandCard', 'text-brandMuted', 'border-brandCardBorder');
+            });
+
+            event.target.classList.remove('bg-brandCard', 'text-brandMuted', 'border-brandCardBorder');
+            event.target.classList.add('bg-brandGold', 'text-brandBlack', 'border-brandGold');
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Lightbox Modal Functions
+        function openLightbox(imgSrc, title, medium, desc) {
+            document.getElementById('lightbox-img').src = imgSrc;
+            document.getElementById('lightbox-title').innerText = title;
+            document.getElementById('lightbox-medium').innerText = medium;
+            document.getElementById('lightbox-desc').innerText = desc;
+            document.getElementById('lightbox').classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden');
+        }
+
+        // Price Selection Trigger from Services Cards
+        function selectPricing(type, size, amount) {
+            const typeSelect = document.getElementById('form-type');
+            const sizeSelect = document.getElementById('form-size');
+            
+            typeSelect.value = type;
+            sizeSelect.value = size;
+
+            updateEstimatedPrice();
+        }
+
+        function updateEstimatedPrice() {
+            const type = document.getElementById('form-type').value;
+            const size = document.getElementById('form-size').value;
+            const badge = document.getElementById('selected-rate-badge');
+
+            if (pricingMap[type] && pricingMap[type][size]) {
+                const cost = pricingMap[type][size].toLocaleString();
+                badge.innerText = `Rate: ${cost} UGX`;
+                badge.classList.remove('hidden');
+            }
+        }
+
+        // File Reference Preview Handler
+        function handleFilePreview(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    document.getElementById('file-preview-img').src = event.target.result;
+                    document.getElementById('file-name-display').innerText = file.name;
+                    document.getElementById('file-preview-container').classList.remove('hidden');
+                    document.getElementById('file-label-text').innerText = 'Change photo';
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Form Submit Handler (Generates WhatsApp Payload or Displays Confirmation)
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const submitter = e.submitter ? e.submitter.value : 'whatsapp';
+
+            const name = document.getElementById('form-name').value;
+            const email = document.getElementById('form-email').value;
+            const phone = document.getElementById('form-phone').value;
+            const type = document.getElementById('form-type').value;
+            const size = document.getElementById('form-size').value;
+            const frame = document.getElementById('form-frame').value;
+            const message = document.getElementById('form-message').value;
+
+            const cost = pricingMap[type] && pricingMap[type][size] ? pricingMap[type][size].toLocaleString() + ' UGX' : 'Custom Quote';
+
+            if (submitter === 'whatsapp') {
+                const textPayload = `*NEW PORTRAIT COMMISSION REQUEST*%0A%0A` +
+                    `*Name:* ${encodeURIComponent(name)}%0A` +
+                    `*Email:* ${encodeURIComponent(email)}%0A` +
+                    `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                    `*Artwork Type:* ${encodeURIComponent(type)}%0A` +
+                    `*Size:* ${encodeURIComponent(size)} (${cost})%0A` +
+                    `*Framing:* ${encodeURIComponent(frame)}%0A` +
+                    `*Message:* ${encodeURIComponent(message || 'N/A')}`;
+
+                window.open(`https://wa.me/256749166015?text=${textPayload}`, '_blank');
+            }
+
+            // Show confirmation toast
+            showToast();
+        }
+
+        function showToast() {
+            const toast = document.getElementById('toast');
+            toast.classList.remove('translate-y-32');
+            setTimeout(() => {
+                toast.classList.add('translate-y-32');
+            }, 4000);
+        }
+
+        // Initial setup
+        updateEstimatedPrice();
+    </script>
+</body>
+</html>
